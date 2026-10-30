@@ -47,7 +47,7 @@ Marca cada punto.
 2. Crear un evento (con un cupo pequeño, por ejemplo 3).
 3. Salir y entrar como **estudiante**. Ver el evento, inscribirse y mostrar la confirmación.
 4. Mostrar la **persistencia**: recargar la página y ver que la inscripción sigue.
-5. Mostrar la **integración** y los **registros**: `./fallas/../descargar-logs.sh 5` o los logs de `/ecs/eventos-u/api` y `/ecs/eventos-u/worker` en CloudWatch.
+5. Mostrar la **integración** y los **registros**: `./descargar-logs.sh 5` (desde `docs/pruebas`) o los logs de `/ecs/eventos-u/api` y `/ecs/eventos-u/worker` en CloudWatch.
 
 ### B. Carga en dos niveles (≈ 2 min)
 
