@@ -161,7 +161,7 @@ input, select, textarea { font: inherit; font-weight: 400; padding: 10px 12px; b
 
 /* Acceso: presentación y universidades aceptadas a un lado, formulario al otro.
    En celular el formulario va justo después del título y las universidades al final. */
-.acceso { display: grid; gap: 28px; align-items: start; grid-template-areas: "intro" "formulario" "universidades"; }
+.acceso { display: grid; gap: 28px; align-items: start; grid-template-columns: minmax(0, 1fr); grid-template-areas: "intro" "formulario" "universidades"; }
 .acceso-intro { grid-area: intro; }
 .acceso-formulario { grid-area: formulario; }
 .acceso-universidades { grid-area: universidades; }
@@ -196,7 +196,7 @@ input, select, textarea { font: inherit; font-weight: 400; padding: 10px 12px; b
 }
 
 /* Crear evento: formulario y, al lado, la tarjeta tal como saldrá en la lista. */
-.crear { display: grid; gap: 28px; align-items: start; }
+.crear { display: grid; gap: 28px; align-items: start; grid-template-columns: minmax(0, 1fr); }
 .crear-formulario { margin: 0; padding: 24px; }
 .crear-vista h2 { font-size: 1rem; }
 .vista-previa .evento { pointer-events: none; }
@@ -211,7 +211,10 @@ input, select, textarea { font: inherit; font-weight: 400; padding: 10px 12px; b
 .volver { display: inline-flex; align-items: center; gap: 4px; color: var(--color-suave); text-decoration: none; font-weight: 500; margin-bottom: 16px; }
 .volver svg { width: 18px; height: 18px; }
 .volver:hover { color: var(--color-texto); }
-.detalle { display: grid; gap: 20px; grid-template-areas: "titulo" "panel" "cuerpo"; }
+/* minmax(0, 1fr): sin esto un texto que no se puede partir (un correo largo) ensancha la columna
+   y toda la página se desborda a lo ancho en el celular. */
+.detalle { display: grid; gap: 20px; grid-template-columns: minmax(0, 1fr); grid-template-areas: "titulo" "panel" "cuerpo"; }
+.detalle-titulo h1, .descripcion { overflow-wrap: break-word; }
 .detalle-titulo { grid-area: titulo; }
 .detalle-titulo h1 { margin: 10px 0 6px; font-size: 2.4rem; }
 .panel { grid-area: panel; display: flex; flex-direction: column; gap: 14px; }
@@ -229,7 +232,7 @@ input, select, textarea { font: inherit; font-weight: 400; padding: 10px 12px; b
 .inscritos { margin-top: 32px; }
 .tabla { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
 .tabla th { text-align: left; font-weight: 600; color: var(--color-suave); padding: 8px 12px 8px 0; border-bottom: 1px solid var(--color-borde); }
-.tabla td { padding: 8px 12px 8px 0; border-bottom: 1px solid var(--color-borde); }
+.tabla td { padding: 8px 12px 8px 0; border-bottom: 1px solid var(--color-borde); overflow-wrap: anywhere; }
 
 @media (min-width: 900px) {
   .detalle { grid-template-columns: minmax(0, 1fr) 340px; grid-template-areas: "titulo panel" "cuerpo panel"; grid-template-rows: auto 1fr; column-gap: 48px; align-items: start; }
