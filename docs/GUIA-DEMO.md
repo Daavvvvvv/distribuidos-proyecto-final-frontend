@@ -29,7 +29,7 @@ Marca cada punto.
 - [ ] La API responde: `curl -s -o /dev/null -w "%{http_code}\n" http://eventos-u-alb-272815655.us-east-1.elb.amazonaws.com/health` debe dar `200`.
 - [ ] El frontend publicado es la versión **real**, no la de demostración (no debe verse el banner amarillo). Si hace falta:
   ```bash
-  npm run build
+  VITE_USE_MOCK=false npm run build
   aws s3 sync dist/ s3://eventos-u-frontend-240864711260 --delete
   aws cloudfront create-invalidation --distribution-id E3036AOB4ZBTB9 --paths "/*"
   ```

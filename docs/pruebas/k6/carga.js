@@ -35,8 +35,8 @@ export const options = {
 
 export function setup() {
   const tokenOrganizador = registrar("organizador", "org");
-  // Cupo enorme: en esta prueba se mide el servicio bajo carga, no el límite de cupo.
-  const eventoId = crearEvento(tokenOrganizador, 100000);
+  // El cupo más alto que acepta el backend: en esta prueba se mide el servicio bajo carga, no el límite de cupo.
+  const eventoId = crearEvento(tokenOrganizador, 10000);
   return { eventoId };
 }
 
