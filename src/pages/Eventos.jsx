@@ -1,13 +1,17 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { api } from "../api/client.js";
-import EventoCard from "../components/EventoCard.jsx";
+import { useAuth } from "../auth.jsx";
+import ListaEventos from "../components/ListaEventos.jsx";
 import { CATEGORIAS } from "../utils.js";
 
 export default function Eventos() {
+  const { usuario } = useAuth();
   const [eventos, setEventos] = useState(null);
   const [error, setError] = useState("");
   const [q, setQ] = useState("");
   const [categoria, setCategoria] = useState("");
+  const [intento, setIntento] = useState(0);
 
   useEffect(() => {
     let cancelado = false;
@@ -25,29 +29,39 @@ export default function Eventos() {
       cancelado = true;
       clearTimeout(timer);
     };
-  }, [q, categoria]);
+  }, [q, categoria, intento]);
+
+  const hayFiltros = q.trim() !== "" || categoria !== "";
+  const quitarFiltros = () => {
+    setQ("");
+    setCategoria("");
+  };
 
   return (
     <>
-      <h1>Próximos eventos</h1>
+      <div className="encabezado-pagina">
+        <h1>Eventos</h1>
+        <p className="suave">Charlas, talleres y encuentros de las universidades de Medellín.</p>
+      </div>
 
       <div className="filtros">
         <input
           type="search"
-          placeholder="Buscar por nombre, lugar o tema"
+          placeholder="Buscar por nombre o descripción"
           value={q}
           onChange={(e) => setQ(e.target.value)}
           aria-label="Buscar eventos"
         />
         <div className="chips" role="group" aria-label="Categoría">
-          <button type="button" className={`chip ${categoria === "" ? "activo" : ""}`} onClick={() => setCategoria("")}>
-            Todos
+          <button type="button" className={`chip ${categoria === "" ? "activo" : ""}`} aria-pressed={categoria === ""} onClick={() => setCategoria("")}>
+            Todas
           </button>
           {CATEGORIAS.map((c) => (
             <button
               key={c}
               type="button"
               className={`chip ${categoria === c ? "activo" : ""}`}
+              aria-pressed={categoria === c}
               onClick={() => setCategoria(c)}
             >
               {c}
@@ -56,13 +70,29 @@ export default function Eventos() {
         </div>
       </div>
 
-      {error && <p className="alerta alerta-error" role="alert">{error}</p>}
-      {!eventos && !error && <p className="suave">Cargando eventos…</p>}
-      {eventos?.length === 0 && <p className="suave">No hay eventos que coincidan con tu búsqueda.</p>}
-
-      <div className="rejilla">
-        {eventos?.map((e) => <EventoCard key={e.id} evento={e} />)}
-      </div>
+      {error ? (
+        <div className="alerta alerta-error alerta-con-accion" role="alert">
+          <span>{error}</span>
+          <button type="button" className="boton-texto" onClick={() => setIntento((n) => n + 1)}>Reintentar</button>
+        </div>
+      ) : (
+        <ListaEventos
+          eventos={eventos}
+          vacio={
+            hayFiltros ? (
+              <>
+                <p>Ningún evento coincide con tu búsqueda.</p>
+                <button type="button" className="boton boton-secundario" onClick={quitarFiltros}>Quitar filtros</button>
+              </>
+            ) : (
+              <>
+                <p>Todavía no hay eventos publicados.</p>
+                {usuario.rol === "organizador" && <Link to="/nuevo" className="boton">Crear el primero</Link>}
+              </>
+            )
+          }
+        />
+      )}
     </>
   );
 }

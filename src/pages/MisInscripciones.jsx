@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { api } from "../api/client.js";
-import EventoCard from "../components/EventoCard.jsx";
+import ListaEventos from "../components/ListaEventos.jsx";
 
 export default function MisInscripciones() {
   const [eventos, setEventos] = useState(null);
@@ -13,17 +13,23 @@ export default function MisInscripciones() {
 
   return (
     <>
-      <h1>Mis inscripciones</h1>
-      {error && <p className="alerta alerta-error" role="alert">{error}</p>}
-      {!eventos && !error && <p className="suave">Cargando…</p>}
-      {eventos?.length === 0 && (
-        <p className="suave">
-          Todavía no te has inscrito a ningún evento. <Link to="/">Ver eventos disponibles</Link>
-        </p>
-      )}
-      <div className="rejilla">
-        {eventos?.map((e) => <EventoCard key={e.id} evento={e} />)}
+      <div className="encabezado-pagina">
+        <h1>Mis inscripciones</h1>
+        <p className="suave">Los eventos a los que te inscribiste.</p>
       </div>
+      {error ? (
+        <p className="alerta alerta-error" role="alert">{error}</p>
+      ) : (
+        <ListaEventos
+          eventos={eventos}
+          vacio={
+            <>
+              <p>Todavía no te has inscrito a ningún evento.</p>
+              <Link to="/" className="boton">Ver eventos</Link>
+            </>
+          }
+        />
+      )}
     </>
   );
 }
