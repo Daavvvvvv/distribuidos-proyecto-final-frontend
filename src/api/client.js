@@ -62,6 +62,7 @@ function mensajePorEstado(status) {
 const realApi = {
   login: (datos) => request("/auth/login", { method: "POST", body: datos }),
   registro: (datos) => request("/auth/registro", { method: "POST", body: datos }),
+  universidades: () => request("/universidades"),
 
   listarEventos: ({ q, categoria } = {}) => {
     const params = new URLSearchParams();

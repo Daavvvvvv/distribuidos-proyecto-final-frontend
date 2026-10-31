@@ -91,6 +91,11 @@ function conDetalle(db, evento, usuarioId) {
 }
 
 export const mockApi = {
+  async universidades() {
+    await esperar();
+    return [{ id: 1, nombre: "Universidad Demo (cuentas de prueba)", sigla: "Demo", dominio: DOMINIO }];
+  },
+
   async login({ email, password }) {
     await esperar();
     const db = cargar();

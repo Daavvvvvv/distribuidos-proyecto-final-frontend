@@ -160,6 +160,42 @@ input, select, textarea { font: inherit; font-weight: 400; padding: 10px 12px; b
 .alerta-ok { background: var(--color-ok-fondo); color: var(--color-ok); }
 .nota { font-size: 0.82rem; color: var(--color-suave); margin-top: 16px; }
 
+/* Acceso: presentación y universidades aceptadas a un lado, formulario al otro.
+   En celular el formulario va justo después del título y las universidades al final. */
+.acceso { display: grid; gap: 28px; align-items: start; grid-template-areas: "intro" "formulario" "universidades"; }
+.acceso-intro { grid-area: intro; }
+.acceso-formulario { grid-area: formulario; }
+.acceso-universidades { grid-area: universidades; }
+.acceso-intro h1 { font-size: 2.6rem; line-height: 1.1; letter-spacing: -0.02em; max-width: 16ch; margin-bottom: 0.75rem; }
+.acceso-intro > p { font-size: 1.1rem; max-width: 46ch; margin: 0; }
+.acceso-subtitulo { font-size: 1rem; margin: 0 0 10px; }
+.universidades { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; max-width: 560px; }
+.universidades li { font-size: 0.88rem; font-weight: 600; padding: 4px 10px; border-radius: 8px; background: var(--color-superficie); border: 1px solid var(--color-borde); cursor: default; }
+.acceso-formulario { padding: 24px; }
+.acceso-formulario form { margin-bottom: 0; }
+.pestanas { display: grid; grid-template-columns: 1fr 1fr; padding: 4px; gap: 4px; border-radius: var(--radio-control); background: var(--color-fondo); border: 1px solid var(--color-borde); }
+.pestanas button { font: inherit; font-weight: 600; border: 0; border-radius: 7px; padding: 9px; background: transparent; color: var(--color-suave); cursor: pointer; }
+.pestanas button.activa { background: var(--color-superficie); color: var(--color-texto); box-shadow: 0 1px 2px rgba(28, 31, 51, 0.08); }
+.pestanas button:focus-visible { outline: 3px solid var(--color-primario); outline-offset: 1px; }
+.contrasena { position: relative; display: block; }
+.contrasena input { padding-right: 88px; }
+.contrasena-ver { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); font: inherit; font-size: 0.85rem; font-weight: 600; border: 0; background: none; color: var(--color-primario); padding: 6px 8px; cursor: pointer; }
+.campo-ayuda { font-weight: 400; font-size: 0.82rem; color: var(--color-suave); }
+.roles { border: 0; padding: 0; margin: 0; display: grid; gap: 8px; }
+.roles legend { font-size: 0.9rem; font-weight: 600; margin-bottom: 6px; padding: 0; }
+.rol { flex-direction: row; align-items: flex-start; gap: 10px; padding: 12px; border: 1px solid var(--color-borde); border-radius: var(--radio-control); cursor: pointer; font-weight: 400; }
+.rol input { width: auto; margin: 3px 0 0; accent-color: var(--color-primario); }
+.rol > span { display: flex; flex-direction: column; }
+.rol.elegido { border-color: var(--color-primario); background: var(--color-primario-claro); }
+
+@media (min-width: 900px) {
+  .acceso { grid-template-columns: minmax(0, 1fr) 440px; grid-template-areas: "intro formulario" "universidades formulario"; grid-template-rows: auto 1fr; gap: 32px 64px; padding-top: 32px; }
+}
+@media (max-width: 719px) {
+  .acceso-intro h1 { font-size: 1.9rem; }
+  .acceso-intro > p { font-size: 1rem; }
+}
+
 /* Detalle de un evento: en celular todo va en una columna con la acción justo después del título;
    en escritorio la acción queda en un panel lateral que acompaña al bajar. */
 .volver { display: inline-flex; align-items: center; gap: 4px; color: var(--color-suave); text-decoration: none; font-weight: 500; margin-bottom: 16px; }
