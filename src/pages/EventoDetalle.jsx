@@ -63,6 +63,11 @@ export default function EventoDetalle() {
 
   useEffect(() => {
     let cancelado = false;
+    // React reutiliza esta pantalla al pasar de un evento a otro: se limpia lo del evento anterior.
+    setEvento(null);
+    setInscritos(null);
+    setError("");
+    setMensaje("");
     (async () => {
       try {
         const e = await api.obtenerEvento(id);
@@ -143,7 +148,7 @@ export default function EventoDetalle() {
           <Accion
             evento={evento}
             trabajando={trabajando}
-            onInscribir={() => accion(api.inscribirse, "Listo, quedaste inscrito.")}
+            onInscribir={() => accion(api.inscribirse, "")}
             onCancelar={() => accion(api.cancelarInscripcion, "Cancelaste tu inscripción.")}
           />
         </aside>
