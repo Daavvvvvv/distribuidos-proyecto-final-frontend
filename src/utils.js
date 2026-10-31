@@ -1,5 +1,3 @@
-export const CATEGORIAS = ["Académico", "Tecnología", "Cultura", "Deportes", "Bienestar", "Otro"];
-
 // "Viernes, 6 de noviembre"
 export function fechaLarga(iso) {
   const texto = new Date(iso).toLocaleString("es-CO", { weekday: "long", day: "numeric", month: "long" });

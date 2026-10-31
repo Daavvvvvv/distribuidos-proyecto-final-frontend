@@ -96,6 +96,11 @@ export const mockApi = {
     return [{ id: 1, nombre: "Universidad Demo (cuentas de prueba)", sigla: "Demo", dominio: DOMINIO }];
   },
 
+  async categorias() {
+    await esperar();
+    return ["Académico", "Tecnología", "Cultura", "Deportes", "Bienestar", "Otro"];
+  },
+
   async login({ email, password }) {
     await esperar();
     const db = cargar();

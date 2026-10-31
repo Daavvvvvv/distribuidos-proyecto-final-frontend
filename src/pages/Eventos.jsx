@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import { api } from "../api/client.js";
 import { useAuth } from "../auth.jsx";
 import ListaEventos from "../components/ListaEventos.jsx";
-import { CATEGORIAS } from "../utils.js";
+import { useCategorias } from "../useCategorias.js";
 
 export default function Eventos() {
   const { usuario } = useAuth();
+  const categorias = useCategorias();
   const [eventos, setEventos] = useState(null);
   const [error, setError] = useState("");
   const [q, setQ] = useState("");
@@ -56,7 +57,7 @@ export default function Eventos() {
           <button type="button" className={`chip ${categoria === "" ? "activo" : ""}`} aria-pressed={categoria === ""} onClick={() => setCategoria("")}>
             Todas
           </button>
-          {CATEGORIAS.map((c) => (
+          {categorias.map((c) => (
             <button
               key={c}
               type="button"

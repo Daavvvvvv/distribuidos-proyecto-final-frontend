@@ -41,6 +41,7 @@ El frontend asume estas rutas y formas de respuesta. **Hay que acordarlas con qu
 | Método y ruta | Cuerpo | Respuesta |
 |---|---|---|
 | `GET /api/universidades` (público) | | `[{id, nombre, sigla, dominio}]` |
+| `GET /api/categorias` (público) | | `["Académico", "Tecnología", ...]` |
 | `POST /api/auth/registro` | `{nombre, email, password, rol}` | `{token, usuario: {id, nombre, email, rol, universidad: {id, nombre, sigla}}}` |
 | `POST /api/auth/login` | `{email, password}` | `{token, usuario}` |
 | `GET /api/eventos?q=&categoria=` | | `[evento]` |
