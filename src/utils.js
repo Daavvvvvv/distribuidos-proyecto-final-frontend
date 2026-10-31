@@ -1,13 +1,8 @@
 export const CATEGORIAS = ["Académico", "Tecnología", "Cultura", "Deportes", "Bienestar", "Otro"];
 
-export function formatearFecha(iso) {
-  const texto = new Date(iso).toLocaleString("es-CO", {
-    weekday: "long",
-    day: "numeric",
-    month: "long",
-    hour: "numeric",
-    minute: "2-digit",
-  });
+// "Viernes, 6 de noviembre"
+export function fechaLarga(iso) {
+  const texto = new Date(iso).toLocaleString("es-CO", { weekday: "long", day: "numeric", month: "long" });
   return texto.charAt(0).toUpperCase() + texto.slice(1);
 }
 

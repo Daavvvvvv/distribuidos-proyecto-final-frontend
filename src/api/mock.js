@@ -62,14 +62,31 @@ function usuarioActual(db) {
 
 const publico = ({ password, ...resto }) => resto;
 
+// Imita las reglas del backend (esOrganizador, puedeInscribirse, puedeCancelar, motivo).
 function conDetalle(db, evento, usuarioId) {
   const inscritos = db.inscripciones.filter((i) => i.eventoId === evento.id).length;
   const organizador = db.usuarios.find((u) => u.id === evento.organizadorId);
+  const inscrito = db.inscripciones.some((i) => i.eventoId === evento.id && i.usuarioId === usuarioId);
+  const esOrganizador = evento.organizadorId === usuarioId;
+  const pasado = new Date(evento.fecha) < new Date();
+  const puedeInscribirse = !esOrganizador && !inscrito && !pasado && inscritos < evento.cupo;
+  const puedeCancelar = inscrito && !pasado;
+  let motivo = null;
+  if (!puedeInscribirse && !puedeCancelar) {
+    if (esOrganizador) motivo = "Eres el organizador de este evento";
+    else if (pasado) motivo = "El evento ya ocurrió";
+    else motivo = "No quedan cupos para este evento";
+  }
   return {
     ...evento,
     inscritos,
     organizador: organizador?.nombre ?? "Organizador",
-    inscrito: db.inscripciones.some((i) => i.eventoId === evento.id && i.usuarioId === usuarioId),
+    universidad: null,
+    inscrito,
+    esOrganizador,
+    puedeInscribirse,
+    puedeCancelar,
+    motivo,
   };
 }
 

@@ -56,11 +56,16 @@ Forma de `evento`:
 {
   "id": 1, "titulo": "...", "descripcion": "...", "fecha": "2026-11-03T08:00:00.000Z",
   "lugar": "...", "cupo": 40, "inscritos": 12, "categoria": "Tecnología",
-  "organizador": "Club de Software", "inscrito": true
+  "organizador": "Club de Software",
+  "universidad": { "id": 1, "nombre": "Universidad EAFIT", "sigla": "EAFIT" },
+  "inscrito": true, "esOrganizador": false,
+  "puedeInscribirse": false, "puedeCancelar": true, "motivo": null
 }
 ```
 
-- `inscrito` indica si el usuario autenticado ya está inscrito.
+- `inscrito` indica si el usuario autenticado ya está inscrito; `esOrganizador`, si es quien organiza el evento.
+- `universidad` es la del organizador (o `null`).
+- Las reglas de inscripción las decide el backend: el frontend muestra "Inscribirme" si `puedeInscribirse`, "Cancelar inscripción" si `puedeCancelar` y, si ninguna aplica, el texto de `motivo` ("Eres el organizador de este evento", "El evento ya ocurrió" o "No quedan cupos para este evento").
 - El token se envía como `Authorization: Bearer <token>`.
 - Los errores deben responder con el código HTTP correcto y `{ "error": "mensaje para el usuario" }`. Ese texto se muestra tal cual. Un `409` significa cupo lleno.
 - Las llamadas usan rutas relativas (`/api/...`) y tienen un timeout de 10 s.

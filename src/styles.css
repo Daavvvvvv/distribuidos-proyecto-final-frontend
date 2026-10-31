@@ -92,8 +92,6 @@ code { background: var(--color-primario-claro); padding: 0.1rem 0.35rem; border-
 /* Controles */
 .tarjeta { background: var(--color-superficie); border: 1px solid var(--color-borde); border-radius: var(--radio); padding: 20px; }
 .formulario-centrado { max-width: 480px; margin: 12px auto; }
-.detalle { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
-.detalle > p { margin: 6px 0; }
 
 /* Lista de eventos */
 .encabezado-pagina { margin-bottom: 20px; }
@@ -162,15 +160,37 @@ input, select, textarea { font: inherit; font-weight: 400; padding: 10px 12px; b
 .alerta-ok { background: var(--color-ok-fondo); color: var(--color-ok); }
 .nota { font-size: 0.82rem; color: var(--color-suave); margin-top: 16px; }
 
-.datos { display: grid; gap: 8px; margin: 10px 0; width: 100%; }
-.datos div { display: flex; flex-direction: column; }
-.datos dt { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-suave); }
-.datos dd { margin: 0; font-weight: 600; }
-.inscritos { width: 100%; border-top: 1px solid var(--color-borde); margin-top: 16px; padding-top: 14px; }
-.inscritos ul { padding-left: 18px; margin: 6px 0 0; }
+/* Detalle de un evento: en celular todo va en una columna con la acción justo después del título;
+   en escritorio la acción queda en un panel lateral que acompaña al bajar. */
+.volver { display: inline-flex; align-items: center; gap: 4px; color: var(--color-suave); text-decoration: none; font-weight: 500; margin-bottom: 16px; }
+.volver svg { width: 18px; height: 18px; }
+.volver:hover { color: var(--color-texto); }
+.detalle { display: grid; gap: 20px; grid-template-areas: "titulo" "panel" "cuerpo"; }
+.detalle-titulo { grid-area: titulo; }
+.detalle-titulo h1 { margin: 10px 0 6px; font-size: 2.4rem; }
+.panel { grid-area: panel; display: flex; flex-direction: column; gap: 14px; }
+.detalle-cuerpo { grid-area: cuerpo; }
+.panel-datos { margin: 0; display: grid; gap: 14px; }
+.panel-datos dt { font-size: 0.85rem; color: var(--color-suave); }
+.panel-datos dd { margin: 2px 0 0; font-weight: 600; }
+.boton-ancho { width: 100%; }
+.estado-inscrito { margin: 0; padding: 10px 14px; border-radius: var(--radio-control); background: var(--color-ok-fondo); color: var(--color-ok); font-weight: 600; }
+.motivo { margin: 0; padding: 10px 14px; border-radius: var(--radio-control); background: var(--color-inactivo); color: var(--color-inactivo-texto); font-weight: 500; }
+.confirmar p { margin: 0 0 10px; font-weight: 500; }
+.confirmar-botones { display: flex; gap: 8px; }
+.confirmar-botones .boton { flex: 1; }
+.descripcion { white-space: pre-line; max-width: 68ch; margin-top: 0; }
+.inscritos { margin-top: 32px; }
+.tabla { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+.tabla th { text-align: left; font-weight: 600; color: var(--color-suave); padding: 8px 12px 8px 0; border-bottom: 1px solid var(--color-borde); }
+.tabla td { padding: 8px 12px 8px 0; border-bottom: 1px solid var(--color-borde); }
+
+@media (min-width: 900px) {
+  .detalle { grid-template-columns: minmax(0, 1fr) 340px; grid-template-areas: "titulo panel" "cuerpo panel"; grid-template-rows: auto 1fr; column-gap: 48px; align-items: start; }
+  .panel { position: sticky; top: 88px; }
+}
 
 @media (min-width: 640px) {
-  .datos { grid-template-columns: repeat(3, 1fr); }
   .filtros { flex-direction: row; align-items: center; justify-content: space-between; gap: 16px; }
   .filtros input { max-width: 360px; }
 }
