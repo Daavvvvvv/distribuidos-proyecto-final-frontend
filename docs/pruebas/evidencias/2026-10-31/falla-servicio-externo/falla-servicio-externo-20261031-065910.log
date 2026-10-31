@@ -1,0 +1,16 @@
+2026-10-31T11:59:11Z  ANTES de la falla: HTTP 200 en 0.680829s
+2026-10-31T11:59:11Z  FALLA: concurrencia reservada de la Lambda = 0 durante 40 s
+2026-10-31T11:59:12Z  servicio externo caído | HTTP 503 en 0.325760s
+2026-10-31T11:59:17Z  servicio externo caído | HTTP 503 en 0.339876s
+2026-10-31T11:59:23Z  servicio externo caído | HTTP 503 en 0.223558s
+2026-10-31T11:59:28Z  servicio externo caído | HTTP 503 en 0.321790s
+2026-10-31T11:59:33Z  servicio externo caído | HTTP 503 en 0.291053s
+2026-10-31T11:59:39Z  servicio externo caído | HTTP 503 en 0.229039s
+2026-10-31T11:59:44Z  servicio externo caído | HTTP 503 en 0.231230s
+2026-10-31T11:59:49Z  servicio externo caído | HTTP 503 en 0.240732s
+2026-10-31T11:59:54Z  RECUPERACIÓN: se quita la restricción de concurrencia
+2026-10-31T11:59:55Z  esperando recuperación | HTTP 200 en 0.319610s
+2026-10-31T11:59:55Z  ------ RESUMEN ------
+2026-10-31T11:59:55Z  Tiempo con el servicio externo caído:     43 s
+2026-10-31T11:59:55Z  Tiempo hasta responder 200 tras restaurar: 1 s
+2026-10-31T11:59:55Z  Tiempo total de interrupción a recuperación: 44 s

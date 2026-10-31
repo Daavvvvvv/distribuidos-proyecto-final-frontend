@@ -1,0 +1,11 @@
+== Cola principal (visibles = pendientes, no visibles = en proceso) ==
+{
+    "ApproximateNumberOfMessages": "11",
+    "ApproximateNumberOfMessagesNotVisible": "0"
+}
+
+== Cola de mensajes fallidos (DLQ): debe estar en 0 ==
+{
+    "ApproximateNumberOfMessages": "0",
+    "ApproximateNumberOfMessagesNotVisible": "0"
+}

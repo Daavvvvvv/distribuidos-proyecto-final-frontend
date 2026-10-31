@@ -1,0 +1,16 @@
+{
+  "nivel": "alto",
+  "fecha": "2026-10-31T12:37:03.159Z",
+  "destino": "http://eventos-u-alb-272815655.us-east-1.elb.amazonaws.com",
+  "usuarios_concurrentes": 50,
+  "duracion_configurada": "2m",
+  "duracion_real_s": "125.3",
+  "solicitudes_totales": 5775,
+  "solicitudes_por_segundo": "46.09",
+  "latencia_media_ms": "261.4",
+  "latencia_p95_ms": "421.1",
+  "latencia_maxima_ms": "18022.5",
+  "errores_http_pct": "0.48",
+  "operaciones_exitosas_pct": "99.42",
+  "umbral_exito_ms": 2000
+}

@@ -1,0 +1,14 @@
+registro  1: HTTP 201 en  1256 ms
+registro  2: HTTP 201 en  1249 ms
+registro  3: HTTP 201 en   879 ms
+registro  4: HTTP 201 en   886 ms
+registro  5: HTTP 201 en   885 ms
+registro  6: HTTP 201 en   847 ms
+registro  7: HTTP 201 en   902 ms
+registro  8: HTTP 201 en   864 ms
+registro  9: HTTP 201 en   807 ms
+registro 10: HTTP 201 en   831 ms
+registro 11: HTTP 201 en   484 ms
+registro 12: HTTP 201 en   484 ms
+
+Estado de los correos: SELECT email, correo_validado FROM usuarios WHERE email LIKE 'breaker-1793447958399-%';

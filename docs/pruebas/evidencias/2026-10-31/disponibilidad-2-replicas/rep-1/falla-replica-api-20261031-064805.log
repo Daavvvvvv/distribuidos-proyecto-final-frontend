@@ -1,0 +1,23 @@
+2026-10-31T11:48:07Z  ESTADO INICIAL: réplicas sanas = 2 de 2
+2026-10-31T11:48:08Z  FALLA: se detiene la tarea 64eb8092cd9f4a4981eac7d5cd439a29 (172.31.64.185)
+2026-10-31T11:48:09Z  réplicas sanas sin la detenida = 1 de 2
+2026-10-31T11:48:15Z  réplicas sanas sin la detenida = 1 de 2
+2026-10-31T11:48:20Z  réplicas sanas sin la detenida = 1 de 2
+2026-10-31T11:48:26Z  réplicas sanas sin la detenida = 1 de 2
+2026-10-31T11:48:31Z  réplicas sanas sin la detenida = 1 de 2
+2026-10-31T11:48:37Z  réplicas sanas sin la detenida = 1 de 2
+2026-10-31T11:48:42Z  réplicas sanas sin la detenida = 1 de 2
+2026-10-31T11:48:48Z  réplicas sanas sin la detenida = 1 de 2
+2026-10-31T11:48:53Z  réplicas sanas sin la detenida = 1 de 2
+2026-10-31T11:48:59Z  réplicas sanas sin la detenida = 1 de 2
+2026-10-31T11:49:04Z  réplicas sanas sin la detenida = 1 de 2
+2026-10-31T11:49:10Z  réplicas sanas sin la detenida = 1 de 2
+2026-10-31T11:49:15Z  réplicas sanas sin la detenida = 1 de 2
+2026-10-31T11:49:21Z  réplicas sanas sin la detenida = 1 de 2
+2026-10-31T11:49:26Z  réplicas sanas sin la detenida = 1 de 2
+2026-10-31T11:49:32Z  réplicas sanas sin la detenida = 1 de 2
+2026-10-31T11:49:37Z  réplicas sanas sin la detenida = 1 de 2
+2026-10-31T11:49:42Z  réplicas sanas sin la detenida = 1 de 2
+2026-10-31T11:49:48Z  réplicas sanas sin la detenida = 2 de 2
+2026-10-31T11:49:48Z  ------ RESUMEN ------
+2026-10-31T11:49:48Z  Tiempo hasta tener de nuevo 2 réplicas sanas: 100 s

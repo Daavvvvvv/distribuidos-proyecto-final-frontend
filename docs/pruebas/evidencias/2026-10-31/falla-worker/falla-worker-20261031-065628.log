@@ -1,0 +1,27 @@
+2026-10-31T11:56:28Z  FALLA: se detiene el worker (desired-count 0) durante 45 s
+2026-10-31T11:56:30Z  worker caído | mensajes en cola: 0 | en DLQ: 0
+2026-10-31T11:56:36Z  worker caído | mensajes en cola: 0 | en DLQ: 0
+2026-10-31T11:56:42Z  worker caído | mensajes en cola: 0 | en DLQ: 0
+2026-10-31T11:56:48Z  worker caído | mensajes en cola: 4 | en DLQ: 0
+2026-10-31T11:56:54Z  worker caído | mensajes en cola: 2 | en DLQ: 0
+2026-10-31T11:57:00Z  worker caído | mensajes en cola: 5 | en DLQ: 0
+2026-10-31T11:57:06Z  worker caído | mensajes en cola: 4 | en DLQ: 0
+2026-10-31T11:57:12Z  worker caído | mensajes en cola: 6 | en DLQ: 0
+2026-10-31T11:57:18Z  Mensajes acumulados al restaurar: 1
+2026-10-31T11:57:18Z  RECUPERACIÓN: se restaura el worker (desired-count 1)
+2026-10-31T11:57:19Z  worker reiniciando | mensajes en cola: 10
+2026-10-31T11:57:24Z  worker reiniciando | mensajes en cola: 10
+2026-10-31T11:57:30Z  worker reiniciando | mensajes en cola: 9
+2026-10-31T11:57:35Z  worker reiniciando | mensajes en cola: 8
+2026-10-31T11:57:41Z  worker reiniciando | mensajes en cola: 11
+2026-10-31T11:57:47Z  worker reiniciando | mensajes en cola: 11
+2026-10-31T11:57:52Z  worker reiniciando | mensajes en cola: 8
+2026-10-31T11:57:58Z  worker reiniciando | mensajes en cola: 11
+2026-10-31T11:58:03Z  worker reiniciando | mensajes en cola: 0
+2026-10-31T11:58:09Z  worker reiniciando | mensajes en cola: 0
+2026-10-31T11:58:09Z  ------ RESUMEN ------
+2026-10-31T11:58:09Z  Tiempo con el worker caído:                 50 s
+2026-10-31T11:58:09Z  Mensajes acumulados durante la caída:       1
+2026-10-31T11:58:09Z  Tiempo hasta vaciar la cola tras restaurar: 51 s
+2026-10-31T11:58:09Z  Tiempo total de interrupción a recuperación: 101 s
+2026-10-31T11:58:09Z  Mensajes en la cola de mensajes fallidos:   0 (si es mayor que 0 hubo procesamiento fallido)

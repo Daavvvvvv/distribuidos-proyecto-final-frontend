@@ -1,0 +1,87 @@
+{
+  "destino": "http://eventos-u-alb-272815655.us-east-1.elb.amazonaws.com",
+  "evento_id": 23,
+  "intentos": 12,
+  "confirmados": 8,
+  "guardados": 8,
+  "confirmados_sin_guardar": [],
+  "guardados_sin_confirmar": [],
+  "respuestas": {
+    "200": 8,
+    "503": 4
+  },
+  "detalle": [
+    {
+      "hora": "2026-10-31T12:21:19.798Z",
+      "email": "demo.valentina.jaramillo2@unal.edu.co",
+      "status": 200,
+      "ms": 116
+    },
+    {
+      "hora": "2026-10-31T12:21:27.914Z",
+      "email": "demo.tomas.ospina9@pascualbravo.edu.co",
+      "status": 200,
+      "ms": 174
+    },
+    {
+      "hora": "2026-10-31T12:21:36.088Z",
+      "email": "demo.antonia.mejia16@unal.edu.co",
+      "status": 200,
+      "ms": 197
+    },
+    {
+      "hora": "2026-10-31T12:21:44.285Z",
+      "email": "demo.salome.londono18@udem.edu.co",
+      "status": 200,
+      "ms": 217
+    },
+    {
+      "hora": "2026-10-31T12:21:52.502Z",
+      "email": "demo.daniela.restrepo30@unal.edu.co",
+      "status": 200,
+      "ms": 165
+    },
+    {
+      "hora": "2026-10-31T12:22:00.667Z",
+      "email": "demo.gabriela.uribe34@eia.edu.co",
+      "status": 200,
+      "ms": 155
+    },
+    {
+      "hora": "2026-10-31T12:22:08.822Z",
+      "email": "demo.recorrido.1793418577941@eafit.edu.co",
+      "status": 200,
+      "ms": 218
+    },
+    {
+      "hora": "2026-10-31T12:22:17.040Z",
+      "email": "demo.mateo.londono3@upb.edu.co",
+      "status": 503,
+      "ms": 204
+    },
+    {
+      "hora": "2026-10-31T12:22:25.244Z",
+      "email": "demo.valentina.arango22@itm.edu.co",
+      "status": 503,
+      "ms": 151
+    },
+    {
+      "hora": "2026-10-31T12:22:33.396Z",
+      "email": "demo.mateo.correa23@pascualbravo.edu.co",
+      "status": 503,
+      "ms": 171
+    },
+    {
+      "hora": "2026-10-31T12:22:41.567Z",
+      "email": "demo.juanjose.arango7@elpoli.edu.co",
+      "status": 503,
+      "ms": 156
+    },
+    {
+      "hora": "2026-10-31T12:22:49.723Z",
+      "email": "demo.daniela.henao10@amigo.edu.co",
+      "status": 200,
+      "ms": 469
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: k6/cupo.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 50 max VUs, 2m30s max duration (incl. graceful stop):
+              * simultaneo: 1 iterations for each of 50 VUs (maxDuration: 2m0s, gracefulStop: 30s)
+
+
+running (0m01.0s), 50/50 VUs, 0 complete and 0 interrupted iterations
+simultaneo   [   0% ] 50 VUs  0m00.2s/2m0s  00/50 iters, 1 per VU
+
+running (0m02.0s), 50/50 VUs, 0 complete and 0 interrupted iterations
+simultaneo   [   0% ] 50 VUs  0m01.2s/2m0s  00/50 iters, 1 per VU
+
+running (0m03.0s), 50/50 VUs, 0 complete and 0 interrupted iterations
+simultaneo   [   0% ] 50 VUs  0m02.2s/2m0s  00/50 iters, 1 per VU
+
+running (0m04.0s), 50/50 VUs, 0 complete and 0 interrupted iterations
+simultaneo   [   0% ] 50 VUs  0m03.2s/2m0s  00/50 iters, 1 per VU
+
+running (0m05.0s), 50/50 VUs, 0 complete and 0 interrupted iterations
+simultaneo   [   0% ] 50 VUs  0m04.2s/2m0s  00/50 iters, 1 per VU
+
+running (0m06.0s), 50/50 VUs, 0 complete and 0 interrupted iterations
+simultaneo   [   0% ] 50 VUs  0m05.2s/2m0s  00/50 iters, 1 per VU
+
+running (0m07.0s), 50/50 VUs, 0 complete and 0 interrupted iterations
+simultaneo   [   0% ] 50 VUs  0m06.2s/2m0s  00/50 iters, 1 per VU
+
+running (0m08.0s), 50/50 VUs, 0 complete and 0 interrupted iterations
+simultaneo   [   0% ] 50 VUs  0m07.2s/2m0s  00/50 iters, 1 per VU
+
+running (0m09.0s), 50/50 VUs, 0 complete and 0 interrupted iterations
+simultaneo   [   0% ] 50 VUs  0m08.2s/2m0s  00/50 iters, 1 per VU
+
+running (0m10.0s), 50/50 VUs, 0 complete and 0 interrupted iterations
+simultaneo   [   0% ] 50 VUs  0m09.2s/2m0s  00/50 iters, 1 per VU
+
+running (0m11.0s), 50/50 VUs, 0 complete and 0 interrupted iterations
+simultaneo   [   0% ] 50 VUs  0m10.2s/2m0s  00/50 iters, 1 per VU
+
+running (0m12.0s), 50/50 VUs, 0 complete and 0 interrupted iterations
+simultaneo   [   0% ] 50 VUs  0m11.2s/2m0s  00/50 iters, 1 per VU
+time="2026-10-31T07:37:15-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 500 {\"error\":\"Ocurrió un error inesperado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/cupo.js:39:26(8))\n" executor=per-vu-iterations hint="script exception" scenario=simultaneo source=stacktrace
+
+running (0m13.0s), 49/50 VUs, 1 complete and 0 interrupted iterations
+simultaneo   [   2% ] 50 VUs  0m12.2s/2m0s  01/50 iters, 1 per VU
+
+running (0m14.0s), 49/50 VUs, 1 complete and 0 interrupted iterations
+simultaneo   [   2% ] 50 VUs  0m13.2s/2m0s  01/50 iters, 1 per VU
+
+running (0m15.0s), 49/50 VUs, 1 complete and 0 interrupted iterations
+simultaneo   [   2% ] 50 VUs  0m14.2s/2m0s  01/50 iters, 1 per VU
+
+running (0m16.0s), 49/50 VUs, 1 complete and 0 interrupted iterations
+simultaneo   [   2% ] 50 VUs  0m15.2s/2m0s  01/50 iters, 1 per VU
+
+running (0m17.0s), 49/50 VUs, 1 complete and 0 interrupted iterations
+simultaneo   [   2% ] 50 VUs  0m16.2s/2m0s  01/50 iters, 1 per VU
+
+running (0m18.0s), 49/50 VUs, 1 complete and 0 interrupted iterations
+simultaneo   [   2% ] 50 VUs  0m17.2s/2m0s  01/50 iters, 1 per VU
+
+running (0m19.0s), 49/50 VUs, 1 complete and 0 interrupted iterations
+simultaneo   [   2% ] 50 VUs  0m18.2s/2m0s  01/50 iters, 1 per VU
+
+running (0m20.0s), 49/50 VUs, 1 complete and 0 interrupted iterations
+simultaneo   [   2% ] 50 VUs  0m19.2s/2m0s  01/50 iters, 1 per VU
+
+running (0m21.0s), 49/50 VUs, 1 complete and 0 interrupted iterations
+simultaneo   [   2% ] 50 VUs  0m20.2s/2m0s  01/50 iters, 1 per VU
+time="2026-10-31T07:37:25-05:00" level=info msg="\nRESULTADO: 20 inscritos registrados de un cupo de 20 (50 intentos). CORRECTO\n" source=console
+
+
+  █ THRESHOLDS 
+
+    inscripciones_aceptadas
+    ✓ 'count==20' count=20
+
+    inscripciones_otro_resultado
+    ✓ 'count==0' count=0
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 52     2.385977/s
+    checks_succeeded...: 98.07% 51 out of 52
+    checks_failed......: 1.92%  1 out of 52
+
+    ✗ registro 200/201
+      ↳  98% — ✓ 50 / ✗ 1
+    ✓ crear evento 200/201
+
+    CUSTOM
+    inscripciones_aceptadas.........: 20     0.917683/s
+    inscripciones_otro_resultado....: 0      0/s
+    inscripciones_rechazadas_cupo...: 29     1.330641/s
+
+    HTTP
+    http_req_duration...............: avg=4.57s  min=96.56ms med=806.57ms max=12.56s p(90)=11.36s p(95)=11.75s
+      { expected_response:true }....: avg=6.03s  min=96.56ms med=6.88s    max=12.56s p(90)=11.44s p(95)=12.03s
+    http_req_failed.................: 29.41% 30 out of 102
+    http_reqs.......................: 102    4.680185/s
+
+    EXECUTION
+    iteration_duration..............: avg=20.55s min=11.5s   med=20.73s   max=20.8s  p(90)=20.79s p(95)=20.8s 
+    iterations......................: 50     2.294208/s
+    vus.............................: 49     min=49        max=50
+    vus_max.........................: 50     min=50        max=50
+
+    NETWORK
+    data_received...................: 56 kB  2.6 kB/s
+    data_sent.......................: 37 kB  1.7 kB/s
+
+
+
+
+running (0m21.8s), 00/50 VUs, 50 complete and 0 interrupted iterations
+simultaneo ✓ [ 100% ] 50 VUs  0m20.8s/2m0s  50/50 iters, 1 per VU

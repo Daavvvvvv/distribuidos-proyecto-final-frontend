@@ -1,0 +1,18 @@
+2026-10-31T12:21:28Z  ESTADO INICIAL: réplicas sanas = 1 de 1
+2026-10-31T12:21:29Z  FALLA: se detiene la tarea cea74a480a3a4d2ba9fda9d7443dd102 (172.31.68.111)
+2026-10-31T12:21:30Z  réplicas sanas sin la detenida = 0 de 1
+2026-10-31T12:21:35Z  réplicas sanas sin la detenida = 0 de 1
+2026-10-31T12:21:41Z  réplicas sanas sin la detenida = 0 de 1
+2026-10-31T12:21:46Z  réplicas sanas sin la detenida = 0 de 1
+2026-10-31T12:21:52Z  réplicas sanas sin la detenida = 0 de 1
+2026-10-31T12:21:57Z  réplicas sanas sin la detenida = 0 de 1
+2026-10-31T12:22:03Z  réplicas sanas sin la detenida = 0 de 1
+2026-10-31T12:22:08Z  réplicas sanas sin la detenida = 0 de 1
+2026-10-31T12:22:14Z  réplicas sanas sin la detenida = 0 de 1
+2026-10-31T12:22:19Z  réplicas sanas sin la detenida = 0 de 1
+2026-10-31T12:22:25Z  réplicas sanas sin la detenida = 0 de 1
+2026-10-31T12:22:30Z  réplicas sanas sin la detenida = 0 de 1
+2026-10-31T12:22:36Z  réplicas sanas sin la detenida = 0 de 1
+2026-10-31T12:22:41Z  réplicas sanas sin la detenida = 1 de 1
+2026-10-31T12:22:41Z  ------ RESUMEN ------
+2026-10-31T12:22:41Z  Tiempo hasta tener de nuevo 1 réplicas sanas: 72 s

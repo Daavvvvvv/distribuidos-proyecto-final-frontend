@@ -1,0 +1,16 @@
+{
+  "destino": "http://eventos-u-alb-272815655.us-east-1.elb.amazonaws.com",
+  "inicio": "2026-10-31T11:43:18.753Z",
+  "fin": "2026-10-31T11:45:49.300Z",
+  "frecuencia_sondeo_s": 1,
+  "criterio_exito": "login + listar + detalle correctos en menos de 2000 ms",
+  "tiempo_observado_s": 150.5,
+  "tiempo_indisponible_s": 0,
+  "disponibilidad_observada_pct": 100,
+  "sondeos_totales": 151,
+  "sondeos_exitosos": 151,
+  "tasa_de_exito_pct": 100,
+  "numero_de_cortes": 0,
+  "mayor_corte_s": 0,
+  "cortes": []
+}

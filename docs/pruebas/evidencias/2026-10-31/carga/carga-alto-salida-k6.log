@@ -1,0 +1,433 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: k6/carga.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 50 max VUs, 2m30s max duration (incl. graceful stop):
+              * carga: 50 looping VUs for 2m0s (gracefulStop: 30s)
+
+
+running (0m01.0s), 50/50 VUs, 0 complete and 0 interrupted iterations
+carga   [   0% ] 50 VUs  0m00.2s/2m0s
+
+running (0m02.0s), 50/50 VUs, 0 complete and 0 interrupted iterations
+carga   [   1% ] 50 VUs  0m01.2s/2m0s
+
+running (0m03.0s), 50/50 VUs, 0 complete and 0 interrupted iterations
+carga   [   2% ] 50 VUs  0m02.2s/2m0s
+
+running (0m04.0s), 50/50 VUs, 0 complete and 0 interrupted iterations
+carga   [   3% ] 50 VUs  0m03.2s/2m0s
+
+running (0m05.0s), 50/50 VUs, 0 complete and 0 interrupted iterations
+carga   [   4% ] 50 VUs  0m04.2s/2m0s
+
+running (0m06.0s), 50/50 VUs, 0 complete and 0 interrupted iterations
+carga   [   4% ] 50 VUs  0m05.2s/2m0s
+time="2026-10-31T07:35:04-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 500 {\"error\":\"Ocurrió un error inesperado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/carga.js:50:32(11))\n" executor=constant-vus hint="script exception" scenario=carga source=stacktrace
+time="2026-10-31T07:35:04-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 500 {\"error\":\"Ocurrió un error inesperado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/carga.js:50:32(11))\n" executor=constant-vus hint="script exception" scenario=carga source=stacktrace
+time="2026-10-31T07:35:04-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 500 {\"error\":\"Ocurrió un error inesperado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/carga.js:50:32(11))\n" executor=constant-vus hint="script exception" scenario=carga source=stacktrace
+
+running (0m07.0s), 50/50 VUs, 3 complete and 0 interrupted iterations
+carga   [   5% ] 50 VUs  0m06.2s/2m0s
+
+running (0m08.0s), 50/50 VUs, 3 complete and 0 interrupted iterations
+carga   [   6% ] 50 VUs  0m07.2s/2m0s
+
+running (0m09.0s), 50/50 VUs, 3 complete and 0 interrupted iterations
+carga   [   7% ] 50 VUs  0m08.2s/2m0s
+
+running (0m10.0s), 50/50 VUs, 3 complete and 0 interrupted iterations
+carga   [   8% ] 50 VUs  0m09.2s/2m0s
+time="2026-10-31T07:35:07-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 500 {\"error\":\"Ocurrió un error inesperado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/carga.js:50:32(11))\n" executor=constant-vus hint="script exception" scenario=carga source=stacktrace
+time="2026-10-31T07:35:08-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 500 {\"error\":\"Ocurrió un error inesperado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/carga.js:50:32(11))\n" executor=constant-vus hint="script exception" scenario=carga source=stacktrace
+time="2026-10-31T07:35:08-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 500 {\"error\":\"Ocurrió un error inesperado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/carga.js:50:32(11))\n" executor=constant-vus hint="script exception" scenario=carga source=stacktrace
+time="2026-10-31T07:35:08-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 500 {\"error\":\"Ocurrió un error inesperado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/carga.js:50:32(11))\n" executor=constant-vus hint="script exception" scenario=carga source=stacktrace
+time="2026-10-31T07:35:08-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 500 {\"error\":\"Ocurrió un error inesperado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/carga.js:50:32(11))\n" executor=constant-vus hint="script exception" scenario=carga source=stacktrace
+time="2026-10-31T07:35:08-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 500 {\"error\":\"Ocurrió un error inesperado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/carga.js:50:32(11))\n" executor=constant-vus hint="script exception" scenario=carga source=stacktrace
+
+running (0m11.0s), 50/50 VUs, 9 complete and 0 interrupted iterations
+carga   [   9% ] 50 VUs  0m10.2s/2m0s
+time="2026-10-31T07:35:09-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 500 {\"error\":\"Ocurrió un error inesperado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/carga.js:50:32(11))\n" executor=constant-vus hint="script exception" scenario=carga source=stacktrace
+time="2026-10-31T07:35:09-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 503 {\"error\":\"Servicio ocupado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/carga.js:50:32(11))\n" executor=constant-vus hint="script exception" scenario=carga source=stacktrace
+time="2026-10-31T07:35:09-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 503 {\"error\":\"Servicio ocupado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/carga.js:50:32(11))\n" executor=constant-vus hint="script exception" scenario=carga source=stacktrace
+time="2026-10-31T07:35:09-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 500 {\"error\":\"Ocurrió un error inesperado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/carga.js:50:32(11))\n" executor=constant-vus hint="script exception" scenario=carga source=stacktrace
+
+running (0m12.0s), 50/50 VUs, 13 complete and 0 interrupted iterations
+carga   [   9% ] 50 VUs  0m11.2s/2m0s
+time="2026-10-31T07:35:10-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 500 {\"error\":\"Ocurrió un error inesperado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/carga.js:50:32(11))\n" executor=constant-vus hint="script exception" scenario=carga source=stacktrace
+time="2026-10-31T07:35:10-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 500 {\"error\":\"Ocurrió un error inesperado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/carga.js:50:32(11))\n" executor=constant-vus hint="script exception" scenario=carga source=stacktrace
+
+running (0m13.0s), 50/50 VUs, 15 complete and 0 interrupted iterations
+carga   [  10% ] 50 VUs  0m12.2s/2m0s
+time="2026-10-31T07:35:11-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 500 {\"error\":\"Ocurrió un error inesperado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/carga.js:50:32(11))\n" executor=constant-vus hint="script exception" scenario=carga source=stacktrace
+time="2026-10-31T07:35:11-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 500 {\"error\":\"Ocurrió un error inesperado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/carga.js:50:32(11))\n" executor=constant-vus hint="script exception" scenario=carga source=stacktrace
+time="2026-10-31T07:35:11-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 500 {\"error\":\"Ocurrió un error inesperado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/carga.js:50:32(11))\n" executor=constant-vus hint="script exception" scenario=carga source=stacktrace
+
+running (0m14.0s), 50/50 VUs, 18 complete and 0 interrupted iterations
+carga   [  11% ] 50 VUs  0m13.2s/2m0s
+time="2026-10-31T07:35:12-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 503 {\"error\":\"Servicio ocupado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/carga.js:50:32(11))\n" executor=constant-vus hint="script exception" scenario=carga source=stacktrace
+
+running (0m15.0s), 50/50 VUs, 19 complete and 0 interrupted iterations
+carga   [  12% ] 50 VUs  0m14.2s/2m0s
+time="2026-10-31T07:35:13-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 503 {\"error\":\"Servicio ocupado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/carga.js:50:32(11))\n" executor=constant-vus hint="script exception" scenario=carga source=stacktrace
+time="2026-10-31T07:35:13-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 503 {\"error\":\"Servicio ocupado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/carga.js:50:32(11))\n" executor=constant-vus hint="script exception" scenario=carga source=stacktrace
+
+running (0m16.0s), 50/50 VUs, 21 complete and 0 interrupted iterations
+carga   [  13% ] 50 VUs  0m15.2s/2m0s
+time="2026-10-31T07:35:14-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 503 {\"error\":\"Servicio ocupado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/carga.js:50:32(11))\n" executor=constant-vus hint="script exception" scenario=carga source=stacktrace
+time="2026-10-31T07:35:14-05:00" level=error msg="Error: No se pudo registrar (estudiante): HTTP 503 {\"error\":\"Servicio ocupado, intenta de nuevo\"}\n\tat registrar (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/lib/api.js:31:18(58))\n\tat default (file:///home/dav/Documents/EAFIT/DistribuidosProyectoFinalFrontend/docs/pruebas/k6/carga.js:50:32(11))\n" executor=constant-vus hint="script exception" scenario=carga source=stacktrace
+
+running (0m17.0s), 50/50 VUs, 23 complete and 0 interrupted iterations
+carga   [  14% ] 50 VUs  0m16.2s/2m0s
+
+running (0m18.0s), 50/50 VUs, 23 complete and 0 interrupted iterations
+carga   [  14% ] 50 VUs  0m17.2s/2m0s
+
+running (0m19.0s), 50/50 VUs, 23 complete and 0 interrupted iterations
+carga   [  15% ] 50 VUs  0m18.2s/2m0s
+
+running (0m20.0s), 50/50 VUs, 24 complete and 0 interrupted iterations
+carga   [  16% ] 50 VUs  0m19.2s/2m0s
+
+running (0m21.0s), 50/50 VUs, 27 complete and 0 interrupted iterations
+carga   [  17% ] 50 VUs  0m20.2s/2m0s
+
+running (0m22.0s), 50/50 VUs, 54 complete and 0 interrupted iterations
+carga   [  18% ] 50 VUs  0m21.2s/2m0s
+
+running (0m23.0s), 50/50 VUs, 63 complete and 0 interrupted iterations
+carga   [  19% ] 50 VUs  0m22.2s/2m0s
+
+running (0m24.0s), 50/50 VUs, 74 complete and 0 interrupted iterations
+carga   [  19% ] 50 VUs  0m23.2s/2m0s
+
+running (0m25.0s), 50/50 VUs, 93 complete and 0 interrupted iterations
+carga   [  20% ] 50 VUs  0m24.2s/2m0s
+
+running (0m26.0s), 50/50 VUs, 108 complete and 0 interrupted iterations
+carga   [  21% ] 50 VUs  0m25.2s/2m0s
+
+running (0m27.0s), 50/50 VUs, 118 complete and 0 interrupted iterations
+carga   [  22% ] 50 VUs  0m26.2s/2m0s
+
+running (0m28.0s), 50/50 VUs, 132 complete and 0 interrupted iterations
+carga   [  23% ] 50 VUs  0m27.2s/2m0s
+
+running (0m29.0s), 50/50 VUs, 148 complete and 0 interrupted iterations
+carga   [  24% ] 50 VUs  0m28.2s/2m0s
+
+running (0m30.0s), 50/50 VUs, 161 complete and 0 interrupted iterations
+carga   [  24% ] 50 VUs  0m29.2s/2m0s
+
+running (0m31.0s), 50/50 VUs, 170 complete and 0 interrupted iterations
+carga   [  25% ] 50 VUs  0m30.2s/2m0s
+
+running (0m32.0s), 50/50 VUs, 190 complete and 0 interrupted iterations
+carga   [  26% ] 50 VUs  0m31.2s/2m0s
+
+running (0m33.0s), 50/50 VUs, 205 complete and 0 interrupted iterations
+carga   [  27% ] 50 VUs  0m32.2s/2m0s
+
+running (0m34.0s), 50/50 VUs, 214 complete and 0 interrupted iterations
+carga   [  28% ] 50 VUs  0m33.2s/2m0s
+
+running (0m35.0s), 50/50 VUs, 228 complete and 0 interrupted iterations
+carga   [  29% ] 50 VUs  0m34.2s/2m0s
+
+running (0m36.0s), 50/50 VUs, 246 complete and 0 interrupted iterations
+carga   [  29% ] 50 VUs  0m35.2s/2m0s
+
+running (0m37.0s), 50/50 VUs, 263 complete and 0 interrupted iterations
+carga   [  30% ] 50 VUs  0m36.2s/2m0s
+
+running (0m38.0s), 50/50 VUs, 277 complete and 0 interrupted iterations
+carga   [  31% ] 50 VUs  0m37.2s/2m0s
+
+running (0m39.0s), 50/50 VUs, 289 complete and 0 interrupted iterations
+carga   [  32% ] 50 VUs  0m38.2s/2m0s
+
+running (0m40.0s), 50/50 VUs, 301 complete and 0 interrupted iterations
+carga   [  33% ] 50 VUs  0m39.2s/2m0s
+
+running (0m41.0s), 50/50 VUs, 315 complete and 0 interrupted iterations
+carga   [  34% ] 50 VUs  0m40.2s/2m0s
+
+running (0m42.0s), 50/50 VUs, 332 complete and 0 interrupted iterations
+carga   [  34% ] 50 VUs  0m41.2s/2m0s
+
+running (0m43.0s), 50/50 VUs, 338 complete and 0 interrupted iterations
+carga   [  35% ] 50 VUs  0m42.2s/2m0s
+
+running (0m44.0s), 50/50 VUs, 355 complete and 0 interrupted iterations
+carga   [  36% ] 50 VUs  0m43.2s/2m0s
+
+running (0m45.0s), 50/50 VUs, 369 complete and 0 interrupted iterations
+carga   [  37% ] 50 VUs  0m44.2s/2m0s
+
+running (0m46.0s), 50/50 VUs, 381 complete and 0 interrupted iterations
+carga   [  38% ] 50 VUs  0m45.2s/2m0s
+
+running (0m47.0s), 50/50 VUs, 397 complete and 0 interrupted iterations
+carga   [  39% ] 50 VUs  0m46.2s/2m0s
+
+running (0m48.0s), 50/50 VUs, 410 complete and 0 interrupted iterations
+carga   [  39% ] 50 VUs  0m47.2s/2m0s
+
+running (0m49.0s), 50/50 VUs, 423 complete and 0 interrupted iterations
+carga   [  40% ] 50 VUs  0m48.2s/2m0s
+
+running (0m50.0s), 50/50 VUs, 438 complete and 0 interrupted iterations
+carga   [  41% ] 50 VUs  0m49.2s/2m0s
+
+running (0m51.0s), 50/50 VUs, 453 complete and 0 interrupted iterations
+carga   [  42% ] 50 VUs  0m50.2s/2m0s
+
+running (0m52.0s), 50/50 VUs, 467 complete and 0 interrupted iterations
+carga   [  43% ] 50 VUs  0m51.2s/2m0s
+
+running (0m53.0s), 50/50 VUs, 480 complete and 0 interrupted iterations
+carga   [  44% ] 50 VUs  0m52.2s/2m0s
+
+running (0m54.0s), 50/50 VUs, 495 complete and 0 interrupted iterations
+carga   [  44% ] 50 VUs  0m53.2s/2m0s
+
+running (0m55.0s), 50/50 VUs, 506 complete and 0 interrupted iterations
+carga   [  45% ] 50 VUs  0m54.2s/2m0s
+
+running (0m56.0s), 50/50 VUs, 516 complete and 0 interrupted iterations
+carga   [  46% ] 50 VUs  0m55.2s/2m0s
+
+running (0m57.0s), 50/50 VUs, 532 complete and 0 interrupted iterations
+carga   [  47% ] 50 VUs  0m56.2s/2m0s
+
+running (0m58.0s), 50/50 VUs, 549 complete and 0 interrupted iterations
+carga   [  48% ] 50 VUs  0m57.2s/2m0s
+
+running (0m59.0s), 50/50 VUs, 558 complete and 0 interrupted iterations
+carga   [  49% ] 50 VUs  0m58.2s/2m0s
+
+running (1m00.0s), 50/50 VUs, 571 complete and 0 interrupted iterations
+carga   [  49% ] 50 VUs  0m59.2s/2m0s
+
+running (1m01.0s), 50/50 VUs, 590 complete and 0 interrupted iterations
+carga   [  50% ] 50 VUs  1m00.2s/2m0s
+
+running (1m02.0s), 50/50 VUs, 604 complete and 0 interrupted iterations
+carga   [  51% ] 50 VUs  1m01.2s/2m0s
+
+running (1m03.0s), 50/50 VUs, 615 complete and 0 interrupted iterations
+carga   [  52% ] 50 VUs  1m02.2s/2m0s
+
+running (1m04.0s), 50/50 VUs, 627 complete and 0 interrupted iterations
+carga   [  53% ] 50 VUs  1m03.2s/2m0s
+
+running (1m05.0s), 50/50 VUs, 644 complete and 0 interrupted iterations
+carga   [  54% ] 50 VUs  1m04.2s/2m0s
+
+running (1m06.0s), 50/50 VUs, 660 complete and 0 interrupted iterations
+carga   [  54% ] 50 VUs  1m05.2s/2m0s
+
+running (1m07.0s), 50/50 VUs, 672 complete and 0 interrupted iterations
+carga   [  55% ] 50 VUs  1m06.2s/2m0s
+
+running (1m08.0s), 50/50 VUs, 682 complete and 0 interrupted iterations
+carga   [  56% ] 50 VUs  1m07.2s/2m0s
+
+running (1m09.0s), 50/50 VUs, 694 complete and 0 interrupted iterations
+carga   [  57% ] 50 VUs  1m08.2s/2m0s
+
+running (1m10.0s), 50/50 VUs, 712 complete and 0 interrupted iterations
+carga   [  58% ] 50 VUs  1m09.2s/2m0s
+
+running (1m11.0s), 50/50 VUs, 728 complete and 0 interrupted iterations
+carga   [  59% ] 50 VUs  1m10.2s/2m0s
+
+running (1m12.0s), 50/50 VUs, 738 complete and 0 interrupted iterations
+carga   [  59% ] 50 VUs  1m11.2s/2m0s
+
+running (1m13.0s), 50/50 VUs, 752 complete and 0 interrupted iterations
+carga   [  60% ] 50 VUs  1m12.2s/2m0s
+
+running (1m14.0s), 50/50 VUs, 767 complete and 0 interrupted iterations
+carga   [  61% ] 50 VUs  1m13.2s/2m0s
+
+running (1m15.0s), 50/50 VUs, 782 complete and 0 interrupted iterations
+carga   [  62% ] 50 VUs  1m14.2s/2m0s
+
+running (1m16.0s), 50/50 VUs, 793 complete and 0 interrupted iterations
+carga   [  63% ] 50 VUs  1m15.2s/2m0s
+
+running (1m17.0s), 50/50 VUs, 808 complete and 0 interrupted iterations
+carga   [  64% ] 50 VUs  1m16.2s/2m0s
+
+running (1m18.0s), 50/50 VUs, 819 complete and 0 interrupted iterations
+carga   [  64% ] 50 VUs  1m17.2s/2m0s
+
+running (1m19.0s), 50/50 VUs, 834 complete and 0 interrupted iterations
+carga   [  65% ] 50 VUs  1m18.2s/2m0s
+
+running (1m20.0s), 50/50 VUs, 846 complete and 0 interrupted iterations
+carga   [  66% ] 50 VUs  1m19.2s/2m0s
+
+running (1m21.0s), 50/50 VUs, 858 complete and 0 interrupted iterations
+carga   [  67% ] 50 VUs  1m20.2s/2m0s
+
+running (1m22.0s), 50/50 VUs, 874 complete and 0 interrupted iterations
+carga   [  68% ] 50 VUs  1m21.2s/2m0s
+
+running (1m23.0s), 50/50 VUs, 888 complete and 0 interrupted iterations
+carga   [  69% ] 50 VUs  1m22.2s/2m0s
+
+running (1m24.0s), 50/50 VUs, 897 complete and 0 interrupted iterations
+carga   [  69% ] 50 VUs  1m23.2s/2m0s
+
+running (1m25.0s), 50/50 VUs, 910 complete and 0 interrupted iterations
+carga   [  70% ] 50 VUs  1m24.2s/2m0s
+
+running (1m26.0s), 50/50 VUs, 927 complete and 0 interrupted iterations
+carga   [  71% ] 50 VUs  1m25.2s/2m0s
+
+running (1m27.0s), 50/50 VUs, 944 complete and 0 interrupted iterations
+carga   [  72% ] 50 VUs  1m26.2s/2m0s
+
+running (1m28.0s), 50/50 VUs, 955 complete and 0 interrupted iterations
+carga   [  73% ] 50 VUs  1m27.2s/2m0s
+
+running (1m29.0s), 50/50 VUs, 970 complete and 0 interrupted iterations
+carga   [  74% ] 50 VUs  1m28.2s/2m0s
+
+running (1m30.0s), 50/50 VUs, 986 complete and 0 interrupted iterations
+carga   [  74% ] 50 VUs  1m29.2s/2m0s
+
+running (1m31.0s), 50/50 VUs, 1001 complete and 0 interrupted iterations
+carga   [  75% ] 50 VUs  1m30.2s/2m0s
+
+running (1m32.0s), 50/50 VUs, 1014 complete and 0 interrupted iterations
+carga   [  76% ] 50 VUs  1m31.2s/2m0s
+
+running (1m33.0s), 50/50 VUs, 1029 complete and 0 interrupted iterations
+carga   [  77% ] 50 VUs  1m32.2s/2m0s
+
+running (1m34.0s), 50/50 VUs, 1040 complete and 0 interrupted iterations
+carga   [  78% ] 50 VUs  1m33.2s/2m0s
+
+running (1m35.0s), 50/50 VUs, 1057 complete and 0 interrupted iterations
+carga   [  79% ] 50 VUs  1m34.2s/2m0s
+
+running (1m36.0s), 50/50 VUs, 1069 complete and 0 interrupted iterations
+carga   [  79% ] 50 VUs  1m35.2s/2m0s
+
+running (1m37.0s), 50/50 VUs, 1082 complete and 0 interrupted iterations
+carga   [  80% ] 50 VUs  1m36.2s/2m0s
+
+running (1m38.0s), 50/50 VUs, 1091 complete and 0 interrupted iterations
+carga   [  81% ] 50 VUs  1m37.2s/2m0s
+
+running (1m39.0s), 50/50 VUs, 1110 complete and 0 interrupted iterations
+carga   [  82% ] 50 VUs  1m38.2s/2m0s
+
+running (1m40.0s), 50/50 VUs, 1121 complete and 0 interrupted iterations
+carga   [  83% ] 50 VUs  1m39.2s/2m0s
+
+running (1m41.0s), 50/50 VUs, 1132 complete and 0 interrupted iterations
+carga   [  84% ] 50 VUs  1m40.2s/2m0s
+
+running (1m42.0s), 50/50 VUs, 1148 complete and 0 interrupted iterations
+carga   [  84% ] 50 VUs  1m41.2s/2m0s
+
+running (1m43.0s), 50/50 VUs, 1166 complete and 0 interrupted iterations
+carga   [  85% ] 50 VUs  1m42.2s/2m0s
+
+running (1m44.0s), 50/50 VUs, 1172 complete and 0 interrupted iterations
+carga   [  86% ] 50 VUs  1m43.2s/2m0s
+
+running (1m45.0s), 50/50 VUs, 1175 complete and 0 interrupted iterations
+carga   [  87% ] 50 VUs  1m44.2s/2m0s
+
+running (1m46.0s), 50/50 VUs, 1196 complete and 0 interrupted iterations
+carga   [  88% ] 50 VUs  1m45.2s/2m0s
+
+running (1m47.0s), 50/50 VUs, 1214 complete and 0 interrupted iterations
+carga   [  89% ] 50 VUs  1m46.2s/2m0s
+
+running (1m48.0s), 50/50 VUs, 1221 complete and 0 interrupted iterations
+carga   [  89% ] 50 VUs  1m47.2s/2m0s
+
+running (1m49.0s), 50/50 VUs, 1235 complete and 0 interrupted iterations
+carga   [  90% ] 50 VUs  1m48.2s/2m0s
+
+running (1m50.0s), 50/50 VUs, 1253 complete and 0 interrupted iterations
+carga   [  91% ] 50 VUs  1m49.2s/2m0s
+
+running (1m51.0s), 50/50 VUs, 1266 complete and 0 interrupted iterations
+carga   [  92% ] 50 VUs  1m50.2s/2m0s
+
+running (1m52.0s), 50/50 VUs, 1277 complete and 0 interrupted iterations
+carga   [  93% ] 50 VUs  1m51.2s/2m0s
+
+running (1m53.0s), 50/50 VUs, 1296 complete and 0 interrupted iterations
+carga   [  94% ] 50 VUs  1m52.2s/2m0s
+
+running (1m54.0s), 50/50 VUs, 1309 complete and 0 interrupted iterations
+carga   [  94% ] 50 VUs  1m53.2s/2m0s
+
+running (1m55.0s), 50/50 VUs, 1319 complete and 0 interrupted iterations
+carga   [  95% ] 50 VUs  1m54.2s/2m0s
+
+running (1m56.0s), 50/50 VUs, 1334 complete and 0 interrupted iterations
+carga   [  96% ] 50 VUs  1m55.2s/2m0s
+
+running (1m57.0s), 50/50 VUs, 1351 complete and 0 interrupted iterations
+carga   [  97% ] 50 VUs  1m56.2s/2m0s
+
+running (1m58.0s), 50/50 VUs, 1361 complete and 0 interrupted iterations
+carga   [  98% ] 50 VUs  1m57.2s/2m0s
+
+running (1m59.0s), 50/50 VUs, 1371 complete and 0 interrupted iterations
+carga   [  99% ] 50 VUs  1m58.2s/2m0s
+
+running (2m00.0s), 50/50 VUs, 1387 complete and 0 interrupted iterations
+carga   [  99% ] 50 VUs  1m59.2s/2m0s
+
+running (2m01.0s), 45/50 VUs, 1403 complete and 0 interrupted iterations
+carga ↓ [ 100% ] 50 VUs  2m0s
+
+running (2m02.0s), 34/50 VUs, 1414 complete and 0 interrupted iterations
+carga ↓ [ 100% ] 50 VUs  2m0s
+
+running (2m03.0s), 20/50 VUs, 1428 complete and 0 interrupted iterations
+carga ↓ [ 100% ] 50 VUs  2m0s
+
+running (2m04.0s), 11/50 VUs, 1437 complete and 0 interrupted iterations
+carga ↓ [ 100% ] 50 VUs  2m0s
+
+running (2m05.0s), 02/50 VUs, 1446 complete and 0 interrupted iterations
+carga ↓ [ 100% ] 50 VUs  2m0s
+
+# Prueba de carga, nivel alto
+
+| Métrica | Valor |
+|---|---|
+| Fecha | 2026-10-31T12:37:03.159Z |
+| Destino | http://eventos-u-alb-272815655.us-east-1.elb.amazonaws.com |
+| Usuarios concurrentes | 50 |
+| Duración | 125.3 s |
+| Solicitudes totales | 5775 |
+| Solicitudes por segundo | 46.09 |
+| Latencia media | 261.4 ms |
+| **Latencia p95** | **421.1 ms** |
+| Latencia máxima | 18022.5 ms |
+| **Errores HTTP** | **0.48 %** |
+| Operaciones exitosas (correctas y en menos de 2000 ms) | 99.42 % |
+
+
+running (2m05.3s), 00/50 VUs, 1448 complete and 0 interrupted iterations
+carga ✓ [ 100% ] 50 VUs  2m0s
